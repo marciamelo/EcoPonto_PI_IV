@@ -62,7 +62,7 @@
                     <div class="nav-inner">
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="ecoponto_list.html">
+                            <a class="navbar-brand" href="ecoponto.html"> <!--ecoponto_list.html-->
                                 <img src="{% static 'img/icons8-reciclagem-3d-fluency-96.png' %}" alt="Logo">
                             </a>
                             <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
@@ -206,6 +206,22 @@ Por este motivo é importante repensarmos onde os nossos lixos eletrônicos est�
 
                                     <p class="course-description">
                                         {{ecoponto.endereco}}
+                                    </p>
+
+                                    <p class="course-description">
+                                        {{ecoponto.bairro}}
+                                    </p>
+
+                                    <p class="course-description">
+                                        {{ecoponto.cidade}}
+                                    </p>
+
+                                    <p class="course-description">
+                                        {{ecoponto.uf}}
+                                    </p>
+
+                                    <p class="course-description">
+                                        {{ecoponto.cep}}
                                     </p>
 
                                     <p class="course-description">
