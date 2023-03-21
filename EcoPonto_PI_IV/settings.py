@@ -77,17 +77,27 @@ WSGI_APPLICATION = 'EcoPonto_PI_IV.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'ecoponto',
+#         'USER': 'postgres',
+#         'PASSWORD': 'dados123',
+#         'HOST': 'localhost', #'127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ecoponto',
-        'USER': 'postgres',
-        'PASSWORD': 'dados123',
-        'HOST': 'localhost', #'127.0.0.1',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'adminecoponto',
+        'PASSWORD': 'Dados123',
+        'HOST': 'ecoponto-server.postgres.database.azure.com',
         'PORT': '5432',
-    }
+    },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

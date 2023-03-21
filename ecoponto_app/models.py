@@ -119,11 +119,14 @@ class DjangoSession(models.Model):
 
 class Ecoponto(models.Model):
     nome_ecoponto = models.URLField(max_length=100, unique=True)
-    endereco = models.TextField(max_length=1000)
-    regiao = models.TextField(max_length=600)
-    localizacao = models.TextField(max_length=600)
-    site = models.TextField(max_length=600)
+    endereco = models.TextField()
+    bairro = models.TextField()
+    cidade = models.TextField()
+    uf = models.TextField()
+    cep = models.TextField()
+    localizacao = models.TextField()
     logo = models.ImageField(upload_to='images')
+
 
     class Meta:
         managed = False

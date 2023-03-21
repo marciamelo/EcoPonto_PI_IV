@@ -23,6 +23,9 @@ from ecoponto_app.views import contato, contato_sucesso
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ecoponto_app.urls')),
-    path('contato/', contato, name='contato'),
-    path('contato/sucesso/', contato_sucesso, name='contato_sucesso'),
+    path('', contato, name='contato'),
+    path('', contato_sucesso, name='contato_sucesso'),
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# path('contato/', contato, name='contato'),
+#     path('contato/sucesso/', contato_sucesso, name='contato_sucesso'),
