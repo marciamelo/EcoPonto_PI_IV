@@ -124,9 +124,7 @@ class Ecoponto(models.Model):
     cidade = models.TextField()
     uf = models.TextField()
     cep = models.TextField()
-    regiao = models.TextField()
     localizacao = models.TextField()
-    site = models.TextField()
     logo = models.ImageField(upload_to='images')
 
 
